@@ -97,6 +97,9 @@ public class ReadQuery {
                 table += "<td>";
                 table += movies.getDirector();        
                 table += "</td>";
+                
+                table+="<td>";
+                table+="<a href=delete?movieID=" + movies.getMovieID() +"> Delete </a>";
                 table += "</tr>";
             }
         } catch (SQLException ex) {
